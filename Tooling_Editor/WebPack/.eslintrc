@@ -1,0 +1,15 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "valid-typeof": "error",
+    "no-console": "off",
+    "linebreak-style": "off"
+  },
+  "parser": "babel-eslint"
+}

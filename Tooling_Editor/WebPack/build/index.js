@@ -1,54 +1,24 @@
-'use strict';
+"use strict";
 
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    if (enumerableOnly)
-      symbols = symbols.filter(function(sym) {
-        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-      });
-    keys.push.apply(keys, symbols);
-  }
-  return keys;
-}
+const calc = require('./calc');
 
-function _objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-    if (i % 2) {
-      ownKeys(source, true).forEach(function(key) {
-        _defineProperty(target, key, source[key]);
-      });
-    } else if (Object.getOwnPropertyDescriptors) {
-      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-      ownKeys(source).forEach(function(key) {
-        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-      });
-    }
-  }
-  return target;
-}
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
-  } else {
-    obj[key] = value;
-  }
-  return obj;
-}
-
-//const calc = require('./calc');
-//console.log(calc.add(1, 2));
-var person = {
+console.log(calc.add(1, 2));
+const person = {
   name: 'jan',
-  age: 12,
-}; // object spread not supported by node 6
+  age: 12
+};
+console.log(person); // object spread not supported by node 6
+// const otherPerson = { ...person, age: 20 };
+// console.log(otherPerson);
 
-var otherPerson = _objectSpread({}, person, {
-  age: 20,
-});
+const bigNumber = 123234234;
+console.log(bigNumber); // Excer clean wiht eslint
 
-console.log(otherPerson);
+const name = 'Freddy';
+typeof name === 'strng';
+
+if (!('serviceWorker' in navigator)) {// you have an old browser :-(
+}
+
+const greeting = 'hello';
+console.log(`${greeting} world!`)[(1, 2, 3)].forEach(x => console.log(x));
