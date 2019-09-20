@@ -4,7 +4,8 @@
     "ecmaVersion": 2018
   },
   "env": {
-    "node": true
+    "node": true,
+    "browser": true
   },
   "rules": {
     "valid-typeof": "error",

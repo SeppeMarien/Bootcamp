@@ -17,9 +17,6 @@ console.log(bigNumber);
 
 // Excer clean wiht eslint
 
-const name = 'Freddy';
-typeof name === 'strng';
-
 if (!('serviceWorker' in navigator)) {
   // you have an old browser :-(
 }
