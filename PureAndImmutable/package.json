@@ -1,0 +1,41 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:prod": "webpack --mode production",
+    "build:babel": "babel ./src -d ./build",
+    "start:watch": "nodemon --exec babel-node src/index.js",
+    "format": "prettier --write \"**/*.{js,json,css}\"",
+    "lint": "eslint \"./src/**/*.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.18.2",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "browserslist": "> 0.25%, not IE 11",
+  "dependencies": {
+    "babel-node": "0.0.1-security",
+    "deep-freeze": "0.0.1",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3"
+  }
+}
