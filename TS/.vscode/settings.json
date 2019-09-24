@@ -1,0 +1,23 @@
+{
+  // Make sure you don't forget to save when changing focus
+  "files.autoSave": "onFocusChange",
+
+  // Prettier setup (in case you install it)
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ESLint Typescript
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+}
