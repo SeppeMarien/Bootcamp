@@ -25,14 +25,13 @@ export default function snail(array) {
           oldArray[0].splice(0, 1);
         }
 
+        height--;
         currentDirection = directionEnum.down;
         break;
       case directionEnum.down:
-        for (let i = 0; i <= height; i++) {
-          if (oldArray[i] !== undefined && oldArray[i][width - 1] !== undefined) {
-            newArray.push(oldArray[i][width - 1]);
-            oldArray[i].splice(width - 1, width - 1);
-          }
+        for (let i = 0; i < height; i++) {
+          newArray.push(oldArray[i][width - 1]);
+          oldArray[i].splice(width - 1, width - 1);
         }
         width--;
         currentDirection = directionEnum.left;
@@ -40,7 +39,7 @@ export default function snail(array) {
       case directionEnum.left:
         for (let j = width - 1; j >= 0; j--) {
           newArray.push(oldArray[height - 1][j]);
-          oldArray[height - 1].splice(j, width);
+          oldArray[height - 1].splice(j, j + 1);
         }
 
         height--;
@@ -48,16 +47,8 @@ export default function snail(array) {
         break;
       case directionEnum.up:
         for (let i = height - 1; i >= 0; i--) {
-          console.log(newArray);
-          console.log(oldArray);
-          if (oldArray[i][0] !== undefined) {
-            newArray.push(oldArray[i][0]);
-            oldArray[i].splice(0, 1);
-            console.log('----------------dfkqdjfmqdjf');
-          }
-          console.log(newArray);
-          console.log(oldArray);
-          console.log('-----------------------------');
+          newArray.push(oldArray[i][0]);
+          oldArray[i].splice(0, 1);
         }
         width--;
         currentDirection = directionEnum.right;
@@ -66,12 +57,15 @@ export default function snail(array) {
         break;
     }
 
-    for (let i = 0; i < oldArray.length; i++) {
-      console.log(oldArray[i].length);
-
-      if (oldArray[i].length === 0) {
-        oldArray.slice(i, 1);
+    oldArray = oldArray.filter(value => {
+      if (value.length === 0) {
+        return;
       }
-    }
+
+      return value;
+    });
   }
+
+  console.log(oldArray);
+  console.log(newArray);
 }
