@@ -1,0 +1,77 @@
+/* General setup */
+
+@font-face {
+  font-family: 'GoudyStM';
+  src: url('./Fonts/sorts-mill-goudy-master/webfonts/GoudyStM-webfont.eot'); /* IE9 Compat Modes */
+  src: url('./Fonts/sorts-mill-goudy-master/webfonts/GoudyStM-Italic-webfont.woff') format('woff'),
+       url('./Fonts/sorts-mill-goudy-master/webfonts/GoudyStM-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./Fonts/sorts-mill-goudy-master/webfonts/GoudyStM-webfont.svg') format('svg');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1400px;
+	min-width: 1000px;
+}
+
+/* Layout */
+
+section {
+	float: left;
+	width: 50%;
+}
+
+aside {
+	float: left;
+	width: 30%;
+}
+
+nav {
+	float: left;
+	width: 20%;
+}
+
+footer {
+	clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+	padding: 20px;
+}
+
+/* header and footer */
+header,
+footer {
+	border-bottom: 5px solid #a66;
+	border-top: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+body {
+  font-family: GoudyStM;
+  font-size: 2em;
+  line-height: 1em;
+  word-spacing: 0.2em;
+}
+
+html {
+  font-size: 10px;
+}
+
+header h1{
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 0.1em;
+}
+

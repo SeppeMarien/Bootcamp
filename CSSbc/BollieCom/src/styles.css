@@ -1,0 +1,95 @@
+body, html {
+  background-color: #F0F0F0;
+  color: #0000A4;
+  height: 100%
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  height: 41px;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 41px;
+}
+
+h1 i {
+  background-color: #0000A4;
+  border-radius: 50%;
+  border: 5px solid #0000A4;
+  margin-right: 6%
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 10%;
+}
+
+.container__header {
+  display: flex;
+  align-content: space-between;
+}
+
+.container__header button {
+  align-self: center;
+}
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1);}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "navigation container shoppingCart";
+  grid-template-columns: 320px 1fr 320px;
+  height: 100%;
+}
+
+.navigation {
+  background-color: white;
+}
+
+.container {
+  overflow: hidden;
+  grid-area: container;
+}
+
+.container__content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: autos;
+}
+
+.items {
+  background-color: #FFFFFF;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	width: 450px;
+}
+
+img {
+  height: 50%;
+  width: 100%;
+}
+
+.shoppingCart{
+  background-color: rgba(0,0,164,0.1);
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.checkout {
+  align-self: flex-end;
+  margin: 0 auto;
+}

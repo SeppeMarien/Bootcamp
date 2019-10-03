@@ -1,0 +1,71 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+  margin: 0;
+}
+
+html {
+  	background-color:#ccc;
+  	font-family: 'Helvetica neue', Arial, 'sans serif';
+  	font-size: 10px;
+}
+
+/* Styles for card container. */
+
+.card {
+	background-color: red;
+	border: 0.2em solid black;
+	border-radius: 1.5em;
+	height: 22em;
+	margin: 5em auto;
+	width: 35em;
+}
+
+/* Styles for main business card components*/
+
+.card article {
+	height: 12em;
+}
+.card article img {
+	float: right;
+	max-height: 100%;
+}
+
+p, h2  {
+	margin: 0;
+}
+
+h2 {
+	height: 2em;
+	line-height: 5px;
+}
+
+footer p {
+	height: 1.5em;
+	line-height: 7.5px;
+}
+
+article p {
+	padding: 1em;
+}
+
+/* Styles for header and footer*/
+
+.card footer
+{
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+	border-radius: 1.5em 1.5em 0 0;
+}
+
+.card header
+{
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+	border-radius: 0 0 1.5em 1.5em;
+}
+
+.card header, .card footer {
+	box-sizing: border-box;
+	height: 3em;
+	padding: 1em;
+}
+
