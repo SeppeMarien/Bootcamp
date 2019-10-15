@@ -18,14 +18,14 @@ function App() {
       */}
 
       {/* 
-        Call component with value V2 */  
+        Call component with value V2   
         <HelloWorld>Euricom</HelloWorld>
-      }
+      */}
 
       {/*
-        Call EmployeeContainer wich calls EmployeeList and passes his state value
+        Call EmployeeContainer witch calls EmployeeList and passes his state value*/
       
-        <EmployeeContainer></EmployeeContainer>*/
+        <EmployeeContainer></EmployeeContainer>
       }
 
     </div>

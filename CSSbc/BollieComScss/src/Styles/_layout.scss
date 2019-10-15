@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-areas: 'nav container shoppingCart';
+  grid-template-columns: 1fr 5fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid {
+    grid-template-areas: 'nav container';
+    grid-template-columns: 64px 1fr;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .grid {
+    display: block;
+    position: relative;
+  }
+}

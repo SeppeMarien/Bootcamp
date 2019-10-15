@@ -6,41 +6,102 @@ class EmployeeContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      company: 'Euricom',
-      employees: ['Peter', 'Niels', 'Kevin', 'Peter'],
+      title: 'Persons ' ,
+      employees: [
+        {
+          name: 'Peter',
+          isAvailable: false
+        }, 
+        { 
+          name: 'Louis',
+          isAvailable: true
+        }, 
+        {
+          name: 'Ludwig',
+          isAvailable: false
+        }, 
+        {
+          name: 'Seppe',
+          isAvailable:true
+        }
+      ],
       newEmployee: '',
+      errors: {}
+    }
+
+    this.textInput = React.createRef()
+  }
+
+  componentDidUpdate(preprop, prevState) {
+    if(prevState.employees !== this.state.employees) {
+      this.setState({
+        title: "People " + this.state.employees.length
+      })
     }
   }
 
-  _onHandleChangeEmployee(e) {
+  componentDidMount() {
     this.setState({
-      newEmployee: e.target.value
+      title: "People " + this.state.employees.length
+    })
+
+    this.textInput.current._FocusTextInput();
+  }
+
+  _addNewEmployee(newEmployee) {
+    const { employees } = this.state;
+    
+    
+    if(this._isValid(newEmployee)){
+      if(newEmployee.trim() !== '') {
+        this.setState({
+          employees: [...employees, {name: newEmployee, isAvailable: true}],
+        })
+      }
+    }
+  }
+
+  _changeAvailability(e) {
+    this.setState({
+      employees: this.state.employees.map((employee, indx) => {
+        if(Number(e.target.id) === indx && e.target.innerHTML === employee.name) {
+          employee.isAvailable = !employee.isAvailable;
+        }
+        return employee;
+      })
     })
   }
 
-  _addNewEmployee() {
-    const { employees, newEmployee } = this.state;
+  _isValid(newEmployee) {
+    let isValid = true;
+    const errors = {};
+    
+
+    if(newEmployee.length < 3) {
+      isValid = false;
+      errors.newEmployee = "Name of new Employee must be at least 3 characters!";
+    }
+
     this.setState({
-      employees: [
-        {name: 'Peter', isAvailable: true},
-        {name: 'Niels', isAvailable: false},
-        {name: 'Kevin', isAvailable: true}
-      ],
-      newEmployee: ''
+      errors: errors
     })
+
+    return isValid;
   }
 
   render() {
-    const { company, employees, newEmployee } = this.state;
+    const { title, employees, errors } = this.state;
+    console.log('container: render');
+    
     return (
       <Fragment>
-        <h1>{company}</h1>
+        <h1>{title}</h1>
         <AddEmployee
-          newEmployee={newEmployee}
-          onHandleChangeEmployee={(e) => this._onHandleChangeEmployee(e)}
-          addNewEmployee={(newEmployee) => this._addNewEmployee(newEmployee)}
+          addNewEmployee={(test) => this._addNewEmployee(test)}
+          errors={errors}
+          ref={this.textInput}
         />
-        <EmployeeList employees={employees} />
+        <EmployeeList onClickFunction={(e) => this._changeAvailability(e)} employees={employees} />
       </Fragment>
     )
   }

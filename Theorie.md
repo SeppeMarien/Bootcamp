@@ -27,14 +27,14 @@ The greatest advantage of immutable variables is that it makes your code easier 
 
 @===||===============>
    _____
-  /     \___                 ~
- /__________|               ~
- O         O               ~
-     ___________________  ~
-    /                   \||
-   /            _        \|
-  /   _        |_|        \
- /   |_|                   \
+  /     \___                 ~             _________________________________________________________
+ /__________|               ~             |
+ O         O               ~              |   '  '  '  '  '  '  '  '  '  '  '  '  '  '  '  '  '  '   
+     ___________________  ~               |   '    _________________________________________________
+    /                   \||               |   '   |
+   /            _        \|               |   '   |
+  /   _        |_|        \               |   '   |
+ /   |_|                   \              |   '   |
  |                  _      |              |   '   |    
  |                 |_|     |              |   '   |
  |                         |              |   '   |
@@ -54,3 +54,11 @@ The greatest advantage of immutable variables is that it makes your code easier 
 - https://www.ryadel.com/en/yarn-vs-npm-pnpm–2019/
 - https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/
 - https://medium.com/@onlykiosk/complete-babel-7-guide-for-beginners-in-2019-7dd78214c464
+
+## 
+https://frontendmasters.com/courses/deep-javascript-v3/
+https://frontendmasters.com/courses/functional-javascript-v3/
+https://www.redhat.com/en/command-line-heroes/season-3/creating-javascript?sc_cid=701f2000000tyBtAAI
+https://devchat.tv/js-jabber/
+https://devchat.tv/react-round-up/
+https://syntax.fm/

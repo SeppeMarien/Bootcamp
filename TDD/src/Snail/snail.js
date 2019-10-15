@@ -1,6 +1,9 @@
 /* eslint-disable for-direction */
 export default function snail(array) {
-  let newArray = [];
+  if (array && array[0].length === 0) {
+    return [];
+  }
+  const newArray = [];
   let oldArray = [[]];
 
   const directionEnum = {
@@ -66,6 +69,5 @@ export default function snail(array) {
     });
   }
 
-  console.log(oldArray);
-  console.log(newArray);
+  return newArray;
 }

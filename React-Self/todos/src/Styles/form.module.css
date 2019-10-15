@@ -1,0 +1,9 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+} 

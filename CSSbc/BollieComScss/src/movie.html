@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleMovie.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid">
+      <div class="nav">
+        <div class="nav__header">
+          <i class="material-icons md-light logo">home</i>
+          <h1>BOL.COM</h1>
+        </div>
+        <div class="nav_pane">
+          <div class="nav__TopLevel">
+            <div class="nav_element">
+              <i class="material-icons">local_florist</i>
+              <div class="nav_element__text">
+                Categorieën
+              </div>
+            </div>
+            <div class="nav_element">
+              <i class="material-icons">local_florist</i>
+              <div class="nav_element__text">
+                Cadeaus & inpiratie
+              </div>
+            </div>
+            <div class="nav__secLevel">
+              <div class="nav_element">
+                <i class="material-icons">cake</i>
+                <div class="nav_element__text">
+                  Cadeautips
+                </div>
+              </div>
+              <div class="nav_element">
+                <i class="material-icons">cake</i>
+                <div class="nav_element__text">
+                  Nieuw binnen
+                </div>
+              </div>
+              <div class="nav__thirdLevel">
+                <div class="nav_element">
+                  <div class="nav_element__text">
+                    Drank
+                  </div>
+                </div>
+                <div class="nav_element">
+                  <div class="nav_element__text">
+                    Boeken
+                  </div>
+                </div>
+                <div class="nav_element">
+                  <div class="nav_element__text">
+                    Wonen
+                  </div>
+                </div>
+                <div class="nav_element">
+                  <div class="nav_element__text">
+                    Slapen
+                  </div>
+                </div>
+                <div class="nav_element">
+                  <div class="nav_element__text">
+                    Films
+                  </div>
+                </div>
+                <div class="nav_element">
+                  <div class="nav_element__text">
+                    Mode
+                  </div>
+                </div>
+              </div>
+              <div class="nav_element">
+                <i class="material-icons">cake</i>
+                <div class="nav_element__text">
+                  Aanbiedingen
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container__header">
+          <div class="container__header__title">
+            <i class="material-icons">menu</i>
+            <h2>Films & TV > Toy Story 4</h2>
+          </div>
+          <div class="profile_pane">
+            <button class="btn">Inloggen</button>
+            <div class="container__header__shoppingCart">
+              <i class="material-icons" id="cart_icon" onclick="showCart()">shopping_cart</i>
+              <div class="container__header__number_items_cart">
+                1
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__content">
+          <div class="movie">
+            <div class="movie__image_container">
+              <img src="../assets/toystory4.jpg" alt="" class="movie__image" />
+            </div>
+            <div class="movie__information">
+              <div class="movie__information__price_rating">
+                <div class="movie__price">
+                  <div class="movie__price__old_price">24,99</div>
+                  <div class="movie__price__new_price">20,99</div>
+                </div>
+              </div>
+              <div class="movie_information_description">
+                Woody heeft altijd vertrouwen gehad in zijn plek op deze wereld. Zijn grootste prioriteit is de zorg
+                voor Andy en Bonnie. Wanneer Bonnie's tot speelgoed omgetoverde handenarbeidprojectje, genaamd Forky,
+                zichzelf als 'vuilnis' ziet en niet als speelgoed, besluit Woody hem te laten zien waarom het leuk is om
+                speelgoed te zijn. Wanneer Bonnie haar speelgoed meeneemt op een familietripje, wordt Woody door een
+                onverwachte omweg herenigd met zijn oude vriendin Bo Peep. Na jaren alleen op pad geweest te zijn, heeft
+                Bo een avontuurlijk karakter gekregen, dat in schril contrast staat met haar breekbare porseleinen
+                buitenkant. Maar nadat Woody en Bo erachter komen dat er een wereld van verschil tussen hen beiden is,
+                ontdekken ze al snel dat er meer dringende zaken zijn om zich druk over te maken.
+              </div>
+            </div>
+            <div class="rating">
+              <div class="rating__header">
+                <h3>Reviews</h3>
+                <button class="write_review">Schrijf review</button>
+              </div>
+              <div class="rating__summ">
+                <div class="rating__number">4.0</div>
+                <div class="rating__stars">4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="cart_container" class="cart">
+        <div class="cart__header">
+          <h2>Shopping cart</h2>
+        </div>
+        <div class="cart_items">
+          <div class="cart_item">
+            item 1
+          </div>
+          <div class="cart_item">
+            item 1
+          </div>
+          <div class="cart_item">
+            item 1
+          </div>
+          <div class="cart_item">
+            item 1
+          </div>
+          <div class="cart_item">
+            item 1
+          </div>
+        </div>
+
+        <button class="btn checkout">Afrekenen</button>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
