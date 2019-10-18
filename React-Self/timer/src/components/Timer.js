@@ -6,7 +6,7 @@ const Timer = (props) => {
 
   const _Count = () => {
     let timer = 0;
-
+    
     counter.current = window.setInterval(() => {  
       setCount(cnt => cnt + 1);
     }, props.timerInterval);

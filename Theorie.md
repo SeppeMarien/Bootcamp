@@ -62,3 +62,5 @@ https://www.redhat.com/en/command-line-heroes/season-3/creating-javascript?sc_ci
 https://devchat.tv/js-jabber/
 https://devchat.tv/react-round-up/
 https://syntax.fm/
+
+[The Wrong Abstraction — Sandi Metz](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)

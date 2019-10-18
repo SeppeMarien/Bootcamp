@@ -56,3 +56,17 @@ Even in our everyday conversations it happens way to quickly that we say to try 
 ### Learning how to say yes --> committing with discipline 
 
 When someone is trying to push you in delivering sooner is and you know it might be possible then you can't overthrow your discipline as a professional to be 100% sure to deliver when asked. You can't deliver without tests, you can't commit without refactoring, ... It is never a good idee to leave out tasks even if they don't have immediate impact on the functionality.  
+
+## Coding
+
+### 3 am Code
+
+`I remember feeling dedicated. I remember thinking that working at 3 am is what serious professionals do. How wrong I was.`
+
+Sleep is important! The moment you work until early in the morning is the moment you stop thinking clearly and your code might seem good or even great but the chances are high that it isn't. 
+
+### The flow zone
+
+`Here's a little hint of someone whose been there and back: Avoid the zone!`
+
+"The Zone" is a highly focused, tunnel-vision state of consciousness that programmes 
